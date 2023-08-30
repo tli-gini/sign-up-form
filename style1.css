@@ -23,4 +23,51 @@ html {
   height: 70rem;
   background-color: #eee;
   border-radius: 3rem;
+  box-shadow: 18px 18px 44px 8px rgba(179, 177, 179, 0.73);
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.banner {
+  position: absolute;
+  z-index: 100;
+  top: 25%;
+  left: 5rem;
+  text-align: center;
+  color: #fff;
+  width: 30rem;
+}
+
+.green-bg {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(187, 186, 227, 1) 20%,
+    rgba(193, 189, 226, 1) 31%,
+    rgba(199, 192, 224, 1) 42%,
+    rgba(216, 208, 239, 1) 64%,
+    rgba(229, 228, 242, 1) 85%,
+    rgba(229, 228, 242, 1) 100%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.green-bg button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
 }
