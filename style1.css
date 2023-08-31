@@ -31,7 +31,7 @@ html {
 
 .banner {
   position: absolute;
-  z-index: 100;
+  z-index: 1; /* 數字大的覆蓋數字小的 */
   top: 25%;
   left: 5rem;
   text-align: center;
@@ -39,17 +39,24 @@ html {
   width: 30rem;
 }
 
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
 .green-bg {
   width: 40%;
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(187, 186, 227, 1) 20%,
-    rgba(193, 189, 226, 1) 31%,
-    rgba(199, 192, 224, 1) 42%,
-    rgba(216, 208, 239, 1) 64%,
-    rgba(229, 228, 242, 1) 85%,
-    rgba(229, 228, 242, 1) 100%
+    rgb(150, 148, 203) 5%,
+    rgba(187, 179, 224, 1) 36%,
+    rgb(195, 186, 222) 50%,
+    rgba(207, 178, 240, 1) 100%
   );
   position: absolute;
   left: 0;
@@ -70,4 +77,39 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   cursor: pointer;
+}
+
+.signup-form {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 40rem;
+  display: flex;
+  flex-direction: column; /* 讓flex水平變垂直 */
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.signup-form h1 {
+  font-size: 4rem;
+  color: rgb(150, 148, 203);
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media i {
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid rgba(187, 179, 224, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: rgb(150, 148, 203);
 }
