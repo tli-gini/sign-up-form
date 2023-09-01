@@ -46,6 +46,7 @@ html {
 
 .banner p {
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .green-bg {
@@ -104,7 +105,7 @@ html {
 .social-media i {
   width: 4rem;
   height: 4rem;
-  border: 0.1rem solid rgba(187, 179, 224, 1);
+  border: 0.1rem solid rgba(187, 179, 224);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -112,4 +113,58 @@ html {
   margin-right: 2rem;
   font-size: 2rem;
   color: rgb(150, 148, 203);
+}
+
+.signup-form p {
+  font-size: 1.5rem;
+  color: rgb(150, 148, 203);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  color: rgb(150, 148, 203);
+  top: 50%;
+  left: 1.2rem;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.input-group input {
+  width: 25rem;
+  height: 4.5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 0.1rem solid rgba(187, 179, 224);
+  border-radius: 50px;
+  color: rgb(150, 148, 203);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(187, 179, 224);
+}
+input[type="email"]::placeholder {
+  color: rgba(187, 179, 224);
+}
+input[type="password"]::placeholder {
+  color: rgba(187, 179, 224);
+}
+
+.signup-form button {
+  width: 16rem;
+  height: 5rem;
+  background-color: rgba(187, 179, 224);
+  border: 0.1rem solid rgba(187, 179, 224);
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+  margin-top: 3rem;
 }
